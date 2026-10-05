@@ -1,0 +1,37 @@
+{
+  "adapterId": "antigravity-ide",
+  "schemaVersion": 1,
+  "strategy": "user-data-dir",
+  "app": {
+    "pathCandidates": ["/Applications/Antigravity IDE.app"],
+    "bundleIdCandidates": ["com.google.antigravity-ide"]
+  },
+  "storage": {
+    "dbPathCandidates": [
+      "~/Library/Application Support/Antigravity IDE/User/globalStorage/state.vscdb"
+    ],
+    "table": "ItemTable",
+    "keyColumn": "key",
+    "valueColumn": "value",
+    "identityKeys": {
+      "required": [],
+      "optional": []
+    },
+    "includeSidecars": ["-wal", "-shm"]
+  },
+  "process": {
+    "rootMatch": { "bundleId": "com.google.antigravity-ide" },
+    "childNameHints": ["language_server"],
+    "quitTimeoutSec": 15,
+    "readyTimeoutSec": 45
+  },
+  "launch": {
+    "extraArgs": [],
+    "userDataDirArgTemplate": ["--user-data-dir={path}"],
+    "proxyArgTemplate": ["--proxy-server={proxy}", "--proxy-bypass-list=<-loopback>"]
+  },
+  "compat": {
+    "verified": ["2.5.5"],
+    "unsupported": []
+  }
+}

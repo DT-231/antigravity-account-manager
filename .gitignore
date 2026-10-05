@@ -1,0 +1,31 @@
+.build/
+.swiftpm/
+DerivedData/
+dist/
+.DS_Store
+.codex/
+*.zip
+*.xcuserstate
+*.vscdb
+*.vscdb-*
+*.backup
+11-maintenance/fixtures/*.json
+img/bug.png
+
+# Local planning, research, prompts, and agent instructions are not published.
+/00-spec/
+/01-setup-P0/
+/02-safety-security/
+/03-research-P1/
+/04-core-cli-P2/
+/05-process-P3/
+/06-proxy-P4/
+/07-ui-P5/
+/08-packaging-P6/
+/09-risks-fallback/
+/10-prompts/
+/11-maintenance/
+/AGENTS.md
+
+# Local profile/test data must never enter the repository.
+ag-test-*/
